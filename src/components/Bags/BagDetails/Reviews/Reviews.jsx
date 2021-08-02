@@ -6,7 +6,6 @@ import rate from '../../../../assets/img/icon/rate.svg';
 import rateActive from '../../../../assets/img/icon/rate_active.svg';
 
 const Reviews = ({ listReViews }) => {
-    console.log(listReViews);
     return (
         <PerfectScrollbar>
             <div className="reviews-wrapper">
