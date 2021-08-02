@@ -4,7 +4,10 @@ import { Header, Footer } from './layouts';
 import {
     Home,
     Bags,
-    BagDetails
+    BagDetails,
+    DesignYourOwn,
+    DesignDetails,
+    DesignCustomize
 } from './components/index';
 
 function App() {
@@ -13,6 +16,9 @@ function App() {
             <Header />
             <Switch>
               <Route path="/" component={Home} exact={true} />
+              <Route path="/design-your-own" component={DesignYourOwn} exact={true} />
+              <Route path="/design-your-own/details" component={DesignDetails} />
+              <Route path="/design-your-own/customize" component={DesignCustomize} />
               <Route path="/bags" component={Bags} exact={true} />
               <Route path="/bags/details" component={BagDetails} />
             </Switch>

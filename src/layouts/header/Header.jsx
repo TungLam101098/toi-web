@@ -13,7 +13,7 @@ const Menu = () => {
   return (
     <ul className="nav size-14">
       <li>
-        <NavLink to="/">
+        <NavLink to="/design-your-own">
           Design your own
           <div />
         </NavLink>

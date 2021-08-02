@@ -5,7 +5,7 @@ import { Button } from 'antd';
 
 import customizeIcon from '../../../assets/img/icon/customize_black.svg';
 
-const ListBag = ({ listBag = [], highlightIndex = null, col = 4, path, hover = null }) => {
+const ListBag = ({ listBag = [], highlightIndex = null, col = 4, path, hover = null, starAt = false }) => {
     const customThisOnHover = (link) => (
         <div className="position-absolute hover w-100 h-100 d-flex justify-content-center align-items-center">
             <NavLink to={link}>
@@ -37,7 +37,14 @@ const ListBag = ({ listBag = [], highlightIndex = null, col = 4, path, hover = n
                 >
                     {bag.title}
                 </h3>
-                <p className={`{size-14 color-dim-gray ${highlightIndex === index && 'text-white'}`}>{bag.cost}</p>
+                {
+                    starAt ? (
+                        <p className={`{size-14 color-dim-gray ${highlightIndex === index && 'text-white'}`}>Start at {bag.cost}</p>
+                    ) : (
+                        <p className={`{size-14 color-dim-gray ${highlightIndex === index && 'text-white'}`}> {bag.cost}</p>
+                    )
+                }
+                
             </div>
         </div>
     );

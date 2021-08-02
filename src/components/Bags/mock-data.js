@@ -10,8 +10,8 @@ export const listBagIconic = [
         id: '1',
         img: bag2,
         title: 'Convertible Mini Merinal',
-        cost: '$1,450.00',
-        originalCost: '$2,000.00',
+        cost: '$900.00',
+        originalCost: '$1,000.00',
         des: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.',
         colors: ['#9BB4C0', '#000000', '#DA6666'],
         details: {
@@ -48,7 +48,7 @@ export const listBagIconic = [
         img: bag4,
         title: 'Letraset sheets containing Lorem Ipsum passages',
         cost: '$1,450.00',
-        originalCost: '$2,000.00',
+        originalCost: '$1,450.00',
         des: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.',
         colors: ['#9BB4C0', '#000000', '#DA6666'],
         details: {
