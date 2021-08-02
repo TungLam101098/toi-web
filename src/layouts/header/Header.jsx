@@ -25,7 +25,7 @@ const Menu = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/">
+        <NavLink to="/bags">
           Bags
           <div />
         </NavLink>
@@ -91,7 +91,7 @@ const Header = () => {
                 <div className="ml-1 size-12">Login</div>
               </div>
               <div className="d-flex align-items-center left-nav-item ml-3">
-                <NavLink to="/cart">
+                <NavLink to="/">
                   <img src={cartIcon} alt="img" />
                 </NavLink>
               </div>
