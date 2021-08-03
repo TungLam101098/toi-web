@@ -10,7 +10,10 @@ import {
     DesignCustomize,
     Collection,
     CollectionDetail,
-    OurStory
+    OurStory,
+    News,
+    NewsDetail,
+    Contact
 } from './components/index';
 
 function App() {
@@ -24,9 +27,12 @@ function App() {
               <Route path="/design-your-own/customize" component={DesignCustomize} />
               <Route path="/collections" component={Collection} exact={true} />
               <Route path="/collections/details" component={CollectionDetail} />
+              <Route path="/news" component={News} exact={true} />
+              <Route path="/news/details" component={NewsDetail} />
               <Route path="/bags" component={Bags} exact={true} />
               <Route path="/bags/details" component={BagDetails} />
               <Route path="/our-story" component={OurStory} />
+              <Route path="/contact" component={Contact} exact={true} />
             </Switch>
             <Footer />
         </Router>

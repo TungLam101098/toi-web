@@ -37,13 +37,13 @@ const Menu = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/">
+        <NavLink to="/news">
           News
           <div />
         </NavLink>
       </li>
       <li>
-        <NavLink to="/">
+        <NavLink to="/contact">
           Contact
           <div />
         </NavLink>

@@ -7,3 +7,6 @@ export { default as DesignCustomize } from './DesignYourOwn/DesignCustomize/Desi
 export { default as Collection } from './Collection/Collection';
 export { default as CollectionDetail } from './CollectionDetail/CollectionDetail';
 export { default as OurStory } from './OurStory/OurStory';
+export { default as News } from './News/News';
+export { default as NewsDetail } from './NewsDetail/NewsDetail';
+export { default as Contact } from './Contact/Contact';
