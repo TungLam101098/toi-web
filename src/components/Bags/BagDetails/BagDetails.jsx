@@ -21,6 +21,7 @@ import Reviews from './Reviews/Reviews';
 import { NavLink } from 'react-router-dom';
 
 const BagDetails = (props) => {
+    const [selectedId, setSelectedId] = useState(0);
     const [imgDetail, setImgDetail] = useState(null);
     const [quality, setQuality] = useState(1);
     const [visible, setVisible] = useState(false);
@@ -94,7 +95,10 @@ const BagDetails = (props) => {
                                                 {bag.colors.map((color, index) => (
                                                     <div
                                                         key={index}
-                                                        className={`color-item-wrapper d-flex justify-content-center align-items-center `}
+                                                        className={`color-item-wrapper d-flex justify-content-center align-items-center ${
+                                                            index === selectedId && 'active'
+                                                        }`}
+                                                        onClick={() => setSelectedId(index)}
                                                     >
                                                         <div
                                                             className="color-item"

@@ -11,3 +11,5 @@ export { default as News } from './News/News';
 export { default as NewsDetail } from './NewsDetail/NewsDetail';
 export { default as Contact } from './Contact/Contact';
 export { default as Cart } from './Cart/Cart';
+export { default as Checkout } from './Checkout/Checkout';
+export { default as Profile } from './Profile/Profile';

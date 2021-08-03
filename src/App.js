@@ -14,28 +14,32 @@ import {
     News,
     NewsDetail,
     Contact,
-    Cart
+    Cart,
+    Checkout,
+    Profile
 } from './components/index';
 
 function App() {
     return (
         <Router>
             <Header />
-            <Switch>
-              <Route path="/" component={Home} exact={true} />
-              <Route path="/design-your-own" component={DesignYourOwn} exact={true} />
-              <Route path="/design-your-own/details" component={DesignDetails} />
-              <Route path="/design-your-own/customize" component={DesignCustomize} />
-              <Route path="/collections" component={Collection} exact={true} />
-              <Route path="/collections/details" component={CollectionDetail} />
-              <Route path="/news" component={News} exact={true} />
-              <Route path="/news/details" component={NewsDetail} />
-              <Route path="/bags" component={Bags} exact={true} />
-              <Route path="/bags/details" component={BagDetails} />
-              <Route path="/our-story" component={OurStory} />
-              <Route path="/contact" component={Contact} exact={true} />
-              <Route path="/cart" component={Cart} />
-            </Switch>
+                <Switch>
+                    <Route path="/" component={Home} exact={true} />
+                    <Route path="/design-your-own" component={DesignYourOwn} exact={true} />
+                    <Route path="/design-your-own/details" component={DesignDetails} />
+                    <Route path="/design-your-own/customize" component={DesignCustomize} />
+                    <Route path="/collections" component={Collection} exact={true} />
+                    <Route path="/collections/details" component={CollectionDetail} />
+                    <Route path="/news" component={News} exact={true} />
+                    <Route path="/news/details" component={NewsDetail} />
+                    <Route path="/bags" component={Bags} exact={true} />
+                    <Route path="/bags/details" component={BagDetails} />
+                    <Route path="/our-story" component={OurStory} />
+                    <Route path="/contact" component={Contact} exact={true} />
+                    <Route path="/cart" component={Cart} />
+                    <Route path="/checkout" component={Checkout} exact={true} />
+                    <Route path="/profile" component={Profile} />
+                </Switch>
             <Footer />
         </Router>
     );
