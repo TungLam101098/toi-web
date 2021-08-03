@@ -7,7 +7,8 @@ import {
     BagDetails,
     DesignYourOwn,
     DesignDetails,
-    DesignCustomize
+    DesignCustomize,
+    Collection
 } from './components/index';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <Route path="/design-your-own" component={DesignYourOwn} exact={true} />
               <Route path="/design-your-own/details" component={DesignDetails} />
               <Route path="/design-your-own/customize" component={DesignCustomize} />
+              <Route path="/collections" component={Collection} exact={true} />
               <Route path="/bags" component={Bags} exact={true} />
               <Route path="/bags/details" component={BagDetails} />
             </Switch>
