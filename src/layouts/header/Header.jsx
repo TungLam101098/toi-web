@@ -19,7 +19,7 @@ const Menu = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/">
+        <NavLink to="/collections">
           Collection
           <div />
         </NavLink>
@@ -31,7 +31,7 @@ const Menu = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/">
+        <NavLink to="/our-story">
           Our story
           <div />
         </NavLink>

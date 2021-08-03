@@ -8,7 +8,9 @@ import {
     DesignYourOwn,
     DesignDetails,
     DesignCustomize,
-    Collection
+    Collection,
+    CollectionDetail,
+    OurStory
 } from './components/index';
 
 function App() {
@@ -21,8 +23,10 @@ function App() {
               <Route path="/design-your-own/details" component={DesignDetails} />
               <Route path="/design-your-own/customize" component={DesignCustomize} />
               <Route path="/collections" component={Collection} exact={true} />
+              <Route path="/collections/details" component={CollectionDetail} />
               <Route path="/bags" component={Bags} exact={true} />
               <Route path="/bags/details" component={BagDetails} />
+              <Route path="/our-story" component={OurStory} />
             </Switch>
             <Footer />
         </Router>

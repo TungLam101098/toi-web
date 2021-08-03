@@ -19,7 +19,7 @@ const Collection = () => {
           <div className="collection-content collection-content--one position-relative">
             <p className="collection-title font-title size-48 color-nero mb-10px">Fall Winter 2020 Collection</p>
             <p className="collection-subtitle size-14 color-dim-gray mb-30px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
-            <NavLink to={`/collections/${1}/details`} className="collection-btn text-white text-uppercase text-center">discover more</NavLink>
+            <NavLink to={`/collections/details`} className="collection-btn text-white text-uppercase text-center">discover more</NavLink>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ const Collection = () => {
           <div className="collection-content collection-content--two position-relative">
             <p className="collection-title font-title size-48 color-nero mb-10px">Fall Winter 2020 Collection</p>
             <p className="collection-subtitle size-14 color-dim-gray mb-30px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
-            <NavLink to={`/collections/${1}/details`} className="collection-btn text-white text-uppercase text-center">discover more</NavLink>
+            <NavLink to={`/collections/details`} className="collection-btn text-white text-uppercase text-center">discover more</NavLink>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ const Collection = () => {
           <div className="collection-content collection-content--three position-relative">
             <p className="collection-title font-title size-48 color-nero mb-10px">Fall Winter 2020 Collection</p>
             <p className="collection-subtitle size-14 color-dim-gray mb-30px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
-            <NavLink to={`/collections/${1}/details`} className="collection-btn text-white text-uppercase text-center">discover more</NavLink>
+            <NavLink to={`/collections/details`} className="collection-btn text-white text-uppercase text-center">discover more</NavLink>
           </div>
         </div>
       </div>

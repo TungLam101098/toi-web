@@ -5,3 +5,5 @@ export { default as DesignYourOwn } from './DesignYourOwn/DesignYourOwn';
 export { default as DesignDetails } from './DesignYourOwn/DesignDetails/DesignDetails';
 export { default as DesignCustomize } from './DesignYourOwn/DesignCustomize/DesignCustomize';
 export { default as Collection } from './Collection/Collection';
+export { default as CollectionDetail } from './CollectionDetail/CollectionDetail';
+export { default as OurStory } from './OurStory/OurStory';
