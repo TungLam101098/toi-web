@@ -13,7 +13,8 @@ import {
     OurStory,
     News,
     NewsDetail,
-    Contact
+    Contact,
+    Cart
 } from './components/index';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
               <Route path="/bags/details" component={BagDetails} />
               <Route path="/our-story" component={OurStory} />
               <Route path="/contact" component={Contact} exact={true} />
+              <Route path="/cart" component={Cart} />
             </Switch>
             <Footer />
         </Router>

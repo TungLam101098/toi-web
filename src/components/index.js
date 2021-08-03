@@ -10,3 +10,4 @@ export { default as OurStory } from './OurStory/OurStory';
 export { default as News } from './News/News';
 export { default as NewsDetail } from './NewsDetail/NewsDetail';
 export { default as Contact } from './Contact/Contact';
+export { default as Cart } from './Cart/Cart';
