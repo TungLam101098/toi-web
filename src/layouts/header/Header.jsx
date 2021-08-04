@@ -87,13 +87,13 @@ const Header = () => {
                 <img src={globeIcon} alt="img" />
                 <div className="ml-1 size-12">English</div>
               </div>
-              <ModalButton className="d-flex align-items-center ml-3" />
-              <div className="d-flex align-items-center left-nav-item ml-3">
+                <ModalButton className="d-flex align-items-center" />
+              <div style={{ marginLeft: "10px" }} className="d-flex align-items-center left-nav-item">
                 <NavLink to="/cart">
                   <img src={cartIcon} alt="img" />
                 </NavLink>
               </div>
-              <div className="d-flex align-items-center left-nav-item ml-3">
+              <div style={{ marginLeft: "10px" }} className="d-flex align-items-center left-nav-item">
                 <img src={searchIcon} alt="img" />
               </div>
             </div>

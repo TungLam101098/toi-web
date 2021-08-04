@@ -56,7 +56,7 @@ const ModalButton = ({className, initialModalAction}) => {
   
   return (
     <>
-      <div className={`modal-btn ${className}`} onClick={showModal}>
+      <div style={{ marginLeft: "10px" }} className={`modal-btn ${className}`} onClick={showModal}>
           <img src={profileIcon} alt="img" />
           <div className="ml-1 size-12">Log In</div>
       </div>
