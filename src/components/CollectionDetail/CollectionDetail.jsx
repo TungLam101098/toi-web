@@ -1,4 +1,3 @@
-import React from 'react';
 import {Tabs, Carousel} from 'antd';
 
 import img14 from '../../assets/img/collection/image_14.png';
