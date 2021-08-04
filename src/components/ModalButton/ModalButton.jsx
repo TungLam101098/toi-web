@@ -3,6 +3,7 @@ import { Modal } from 'antd';
 
 import LoginModal from '../LoginModal/LoginModal';
 import SignupModal from '../SignupModal/SignupModal';
+import ForgotPasswordModal from '../ForgotPasswordModal/ForgotPasswordModal';
 
 import profileIcon from '../../assets/img/icon/Profile.svg';
 import closeIcon from '../../assets/img/icon/Close.svg';
@@ -29,12 +30,18 @@ const ModalButton = ({className, initialModalAction}) => {
     setCurrentModal("LOG_IN");
   }
 
+  const handleShowForgotPassword = () => {
+    setCurrentModal("FORGOT_PASSWORD");
+  }
+
   const handleCurrentModal = () => {
     switch (currentModal) {
       case "LOG_IN":
-        return <LoginModal handleShowSignUp={handleShowSignUp} />;
+        return <LoginModal handleShowSignUp={handleShowSignUp} handleShowForgotPassword={handleShowForgotPassword} />;
       case "SIGN_UP":
         return <SignupModal handleShowLogIn={handleShowLogIn} />;
+      case "FORGOT_PASSWORD":
+        return <ForgotPasswordModal handleShowLogIn={handleShowLogIn} />;
       default:
         return null;
     }
