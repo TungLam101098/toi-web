@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from 'antd';
 
 import LoginModal from '../LoginModal/LoginModal';
-// import ForgotPasswordModal from '../ForgotPasswordModal/ForgotPasswordModal';
-// import ForgotPasswordModal2 from '../ForgotPasswordModal2/ForgotPasswordModal2';
-// import SignupModal from '../SignupModal/SignupModal';
+import SignupModal from '../SignupModal/SignupModal';
 
 import profileIcon from '../../assets/img/icon/Profile.svg';
 import closeIcon from '../../assets/img/icon/Close.svg';
@@ -12,15 +10,8 @@ import closeIcon from '../../assets/img/icon/Close.svg';
 import './ModalButton.scss';
 
 const ModalButton = ({className, initialModalAction}) => {
-  // const modalRef = useRef(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [currentModal, setCurrentModal] = useState("LOG_IN");
-  // const {currentModal} = useSelector((state) => state.modal);
-  // const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   dispatch(initialModalAction);
-  // }, []);
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -28,13 +19,22 @@ const ModalButton = ({className, initialModalAction}) => {
 
   const handleCancel = () => {
     setIsModalVisible(false);
-    // dispatch(initialModalAction);
   };
+
+  const handleShowSignUp = () => {
+    setCurrentModal("SIGN_UP");
+  }
+
+  const handleShowLogIn = () => {
+    setCurrentModal("LOG_IN");
+  }
 
   const handleCurrentModal = () => {
     switch (currentModal) {
       case "LOG_IN":
-        return <LoginModal />;
+        return <LoginModal handleShowSignUp={handleShowSignUp} />;
+      case "SIGN_UP":
+        return <SignupModal handleShowLogIn={handleShowLogIn} />;
       default:
         return null;
     }

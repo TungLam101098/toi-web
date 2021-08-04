@@ -3,8 +3,7 @@ import instagramIcon from '../../assets/img/icon/Instagram.svg';
 import googleIcon from '../../assets/img/icon/Google.svg';
 import './LoginModal.scss';
 
-const LoginModal = (props) => {
-
+const LoginModal = ({ handleShowSignUp, handleShowForgotPassword }) => {
   return (
     <div className="login d-flex flex-column align-items-center">
       <p className="login-title color-nero size-16 text-center">LOG IN</p>
@@ -15,7 +14,7 @@ const LoginModal = (props) => {
             <label className="login-label size-16 color-nero text-left w-100" htmlFor="login-password">PASSWORD</label>
             <input type="password" name="password" id="login-password" className="login-input size-16 w-100" placeholder="Password" />
             <div className="text-left mt-3">
-              <div role="button" className="login-forgot-password" >Forgot password</div>
+              <div role="button" className="login-forgot-password" onClick={handleShowForgotPassword} >Forgot password</div>
             </div>
             <div className="text-center">
               <button type="submit" className="login-btn text-white">
@@ -35,7 +34,7 @@ const LoginModal = (props) => {
           <img src={instagramIcon} alt=""/>
         </button>
       </nav>
-      <p className="color-dark-gray-1 login-signup text-uppercase">don&apos;t have an account, <button className="login-signup-btn color-nero text-uppercase">sign up here</button></p>
+      <p className="color-dark-gray-1 login-signup text-uppercase">don&apos;t have an account, <button className="login-signup-btn color-nero text-uppercase" onClick={handleShowSignUp} >sign up here</button></p>
     </div>
   );
 };
