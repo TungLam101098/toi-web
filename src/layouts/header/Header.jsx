@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import ModalButton from '../../components/ModalButton/ModalButton';
+
 import globeIcon from "../../assets/img/icon/Globe.svg";
 import searchIcon from "../../assets/img/icon/Search.svg";
 import cartIcon from "../../assets/img/icon/Cart.svg";
 import logo from "../../assets/img/icon/Toi-Black 1.svg";
-import profileIcon from "../../assets/img/icon/Profile.svg";
 import { NavLink } from "react-router-dom";
 import { Drawer } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
@@ -86,10 +87,7 @@ const Header = () => {
                 <img src={globeIcon} alt="img" />
                 <div className="ml-1 size-12">English</div>
               </div>
-              <div className="d-flex align-items-center left-nav-item">
-                <img src={profileIcon} alt="img" />
-                <div className="ml-1 size-12">Login</div>
-              </div>
+              <ModalButton className="d-flex align-items-center ml-3" />
               <div className="d-flex align-items-center left-nav-item ml-3">
                 <NavLink to="/cart">
                   <img src={cartIcon} alt="img" />
