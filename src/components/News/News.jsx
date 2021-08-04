@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from 'antd';
 import './News.scss';
@@ -7,7 +6,6 @@ import calendarImg from '../../assets/img/icon/Calendar.png';
 import { mockData } from './mock-data';
 
 const News = () => {
-
   return (
     <div className="news">
       <div className="container">
