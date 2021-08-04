@@ -14,7 +14,7 @@ import { NavLink } from 'react-router-dom';
 const findBagById = (id) => listBagIconic.find((i) => i.id === id);
 
 const CartItem = ({ item, setQuantityDecToListBag, setQuantityIncToListBag }) => {
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(item.quantity);
     const bagItem = findBagById(item.id);
 
     const inc = (id) => {

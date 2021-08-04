@@ -14,6 +14,6 @@ export const listBagIconic = [
         img: bag2,
         title: 'Letraset sheets containing Lorem Ipsum passages',
         cost: '$1,000.00',
-        quantity: 1
+        quantity: 2
     }
 ];
