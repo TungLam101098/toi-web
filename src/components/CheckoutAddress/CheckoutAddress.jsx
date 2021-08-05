@@ -1,8 +1,11 @@
 import bottomArrow from '../../assets/img/icon/Bottom-Arrow.svg';
 import './CheckoutAddress.scss';
 
-const CheckoutAddress = () => {
-
+const CheckoutAddress = ({next}) => {
+  const submitAddress = (e) => {
+    e.preventDefault();
+    next();
+  }
   return <div className="ca">
     <div className="ca-main">
       <p className="ca-title font-title size-25 color-nero mb-20px">Where should we deliver your order?</p>
@@ -54,7 +57,7 @@ const CheckoutAddress = () => {
             <input type="text" name="address" id="ca-address" className="ca-input size-16 w-100" placeholder="Name" />
           </div>
           <div className="text-center">
-            <button type="submit"  className="ca-btn text-white text-uppercase">
+            <button type="submit" onClick={submitAddress} className="ca-btn text-white text-uppercase">
               deliver to this address
             </button>
           </div>
