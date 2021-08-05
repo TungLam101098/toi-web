@@ -2,19 +2,19 @@
 .ant-steps-item-custom.ant-steps-item-process
   .ant-steps-item-icon
   > .ant-steps-icon {
-  color: #bdaa66 !important;
+  color: $cl_gimblet !important;
 }
 .step {
   font-size: 40px;
   border-radius: 50%;
-  border: 2px solid #bdaa66;
+  border: 2px solid $cl_gimblet;
   padding: 2px;
 }
 .user-step {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid #bdaa66;
+  border: 2px solid $cl_gimblet;
   display: flex;
   justify-content: center;
   align-items: center;
